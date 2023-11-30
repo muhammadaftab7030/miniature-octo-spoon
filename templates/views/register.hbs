@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 m-auto px-4">
+<form action="/register" method="POST">
+    <h2 class="text-center mt-5 mb-4">Add User</h2>
+    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 m-auto px-4">
+        <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="mb-3">
+            <input type="name" name="firstname" class="form-control" placeholder="First Name" required>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="mb-3">
+            <input type="name" name="lastname" class="form-control" placeholder="Last Name" required>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="email" required>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" value="Male" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+                Male
+            </label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" value="Female">
+            <label class="form-check-label" for="flexRadioDefault2">
+                Female
+            </label>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="mb-3">
+        <input type="number" name="phone" class="form-control" placeholder="Your Phone">
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="mb-3">
+            <input type="number" name="age" class="form-control" placeholder="Age" required>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="mb-3">
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="mb-3">
+            <input type="password" name="cpassword" class="form-control" placeholder="Confirm Password" required>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+        <a class="text-decoration-none cancelbtn btn btn-danger float-end"  href="/">cancel</a>
+        </div>
+        <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+        <button type="submit" class="btn btn-primary float-end">Submit</button>
+        </div>
+        </div>
+    </div>
+    </form>
+    {{>footer}}
+</div>
+</body>
+</html>
+
